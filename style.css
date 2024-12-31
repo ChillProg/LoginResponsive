@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color:#999999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.container {
+	width: 80%;
+	height: 90%;
+	border-radius: 1rem;
+	background-color: white;
+	padding: 1rem;
+	box-shadow: 5px 12px 11px -2px rgba(0, 0, 0, 0.2);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	overflow: hidden;
+}
+
+.image-section {
+	width: 100%;
+	height: 100%;
+	border-radius: 2rem;
+	background-color: #212121;
+	position: relative;
+}
+
+.form-section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: 4rem;
+}
+
+.form-section .logo-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.form-section .logo-container img {
+	width: 4.2rem;
+	height: 4.2rem;
+	border-radius: 50%;
+}
+
+.form-section .logo-container span {
+	font-size: 2rem;
+	font-weight: 900;
+	color: #424242;
+}
+
+.form-section p {
+	margin-top: 1.2rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #6e6e6e;
+}
+
+.form-section h1 {
+	margin-top: 1.2rem;
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: #212121;
+}
+
+.form-section h1 span {
+	line-height: 3rem;
+	display: block;
+}
+
+.form-section form {
+	margin-top: 2.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.form-section form .input-container {
+	position: relative;
+}
+
+.form-section form input{ 
+	width: 100%;
+	border-radius: 4rem;
+	border: none;
+	background-color: #f3f3f3;
+	padding: 0.7rem;
+	font-size: 1rem;
+	line-height: 140%;
+	letter-spacing: 0.2px;
+	color: #747474;
+	padding-left: 4rem;
+}
+
+.form-section form input:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.form-section form .input-container span{
+	position: absolute;
+	top: 0.6rem;
+	left: 1.5rem;
+	font-size: 1.7rem;
+	color: #c7c7c7;
+}
+
+.form-section button {
+	margin-top: 2.5rem;
+	background-color: #212121;
+	color: white;
+	font-size: 1rem;
+	font-weight: 800;
+	border-radius: 4rem;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.or {
+	margin-top: 2rem;
+	font-size: 0.9rem;
+	color: #bababa;
+	font-weight: 500;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alreadyAccount {
+	margin-top: 2rem;
+	font-size: 1rem;
+	font-weight: 500;
+	color: #9c9c9c !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alreadyAccount a {
+	color: #212121;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.card1 {
+	width: 260px;
+	bottom: 20%;
+	left: 7%;
+	position: absolute;
+	background-color: white;
+	border-radius: 1rem;
+	padding: 0.8rem 1.5rem;
+	z-index: 4;
+	box-shadow: 5px 12px 11px -2px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;	
+	gap: 2px;
+}
+
+.card1 h1 {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #212121;
+}
+
+.card1 span {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #9c9c9c;
+}
+
+.card1 .data {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card1 .data .money {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #666666;
+}
+
+.card1 .data .percentage {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #b2e68b;
+}
+
+.card1 .progress-bar {
+	width: 100%;
+	height: 5px;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.card1 .progress-bar .bar{
+	width: 70%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #424242;
+}
+
+.card2 {
+	width: 350px;
+	bottom: 15%;
+	right: 10%;
+	position: absolute;
+	background-color: white;
+	border-radius: 1rem;
+	padding: 0.8rem;
+	z-index: 3;
+	box-shadow: 5px 12px 11px -2px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.card2 img {
+	border-radius: 1rem;
+}
+
+.card2 h1 {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #212121;
+}
+
+.card2 p {
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #9c9c9c;
+}
+
+.card2 .list {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.card2 .list span {
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #9c9c9c;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.card2 .footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card2 .footer .button {
+	background-color: #212121;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: 800;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+}
+
+.card2 .footer .money {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #212121;
+}
+
+.card2 .footer .money span{
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #9c9c9c;
+}
+
+.card3 {
+	top: 15% !important;
+	bottom: auto !important;
+	left: 10% !important;
+	z-index: 1 !important;
+}
+
+.card4 {
+	top: 10% !important;
+	bottom: auto !important;
+	right: 15% !important;
+	left: auto !important;
+	z-index: 2 !important;
+}
+
+@media (max-width: 1600px) {
+	.card1 {
+		bottom: 15%;
+		scale: 0.9;
+	}
+
+	.card4 {
+		top: 8% !important;
+	} 
+
+	.card2 {
+		bottom: 15%;
+		scale: 0.8;
+	}
+
+	.card3 {
+		top: 8% !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.card1 {
+		bottom: 45%;
+		scale: 1;
+		left: auto;
+		right: 5%;
+	}
+
+	.card4 {
+		top: 2% !important;
+		left: 2% !important;
+		right: auto !important;
+	} 
+	
+	.card2 {
+		bottom: 5%;
+		left: 5%;
+		scale: 1;
+	}
+ 
+	.card3 {
+		top: 5% !important;
+		scale: 0.8;
+		right: 10%;
+		left: auto !important;
+	}
+}
+
+@media (max-width: 1120px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 30% 70%;
+		padding: 0;
+		gap: 1.5rem;
+	}
+
+	.image-section {
+		border-radius: 0;
+	}
+
+	.card1,
+	.card2,
+	.card3,
+	.card4 {
+		scale: 0.5;
+	}
+
+	.card3 {
+		left: -120px !important;
+		right: auto;
+		top: auto !important;
+		bottom: -110px !important;
+		transform: rotate(10deg) !important;
+	}
+
+	.card2 {
+		right: -70px !important;
+		left: auto;
+		top: -140px;
+		bottom: auto;
+		transform: rotate(210deg);
+	}
+
+	.card4 {
+		right: 60px !important;
+		left: auto !important;
+		top: auto !important;
+		bottom: 0px !important;
+		transform: rotate(-10deg) !important;
+	}
+
+	.card1 {
+		right: auto;
+		top: auto !important;
+		bottom: 135px;
+	}
+
+	.form-section {
+		padding: 1rem 1.5rem;
+		justify-content: flex-start;
+	}
+
+	.form-section .logo-container img {
+		width: 2.2rem;
+		height: 2.2rem;
+	}
+
+	.form-section .logo-container span {
+		font-size: 1.2rem;
+	}
+
+	.form-section p {
+		font-size: 1.1rem;
+	}
+
+	.form-section h1 {
+		display: none;
+	}
+}
